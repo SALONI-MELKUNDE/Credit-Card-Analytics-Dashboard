@@ -19,7 +19,9 @@ It includes KPIs, quarterly and weekly revenue trends, spending categories, card
 10. [Future Enhancements](#future-enhancements)  
 11. [License](#license)  
 
+
 ---
+
 
 ## 1. Overview 🌐  
 
@@ -30,7 +32,9 @@ The **Credit Card Analytics Dashboard** consists of two key reports:
 
 Together, these dashboards enable organizations to analyze **spending patterns**, **card usage trends**, and **customer segmentation** to support data-driven decision-making.  
 
+
 ---
+
 
 ## 2. Project Structure 🗂️  
 
@@ -46,6 +50,9 @@ Together, these dashboards enable organizations to analyze **spending patterns**
 └─ README.md
 ```
 
+---
+
+
 ## 3. Features ⭐
 
 **Transaction Report**
@@ -60,6 +67,36 @@ Together, these dashboards enable organizations to analyze **spending patterns**
 
 **Customer Report**
 
+- KPIs: Revenue, Interest, Income, CSS
+- Revenue by Week (line chart)
+- Revenue by Income Group (High, Medium, Low — segmented by gender)
+- Revenue by Age Group (20–30, 30–40, 40–50, 50–60, 60+)
+- Top 5 States: TX, NY, CA, FL, NJ
+- Revenue by Customer Job (segmented by gender)
+- Revenue by Education Level (segmented by gender)
+- Revenue by Marital Status (Married, Single, Unknown)
+- Revenue by Dependents
+- Car Owner & House Owner Count
+
+---
+
+## 4. Technologies Used 💻
+
+- **Power BI Desktop**
+- **CSV files** (credit_card.csv, customer.csv, cc_add.csv, cust_add.csv)
+- **MS Excel** (data preparation & CSV exports)
+- **MySQL** (data storage and preprocessing before importing to Power BI)  
+- **DAX** (Data Analysis Expressions)  
+- **Power Query** for data transformations  
+
+---
+
+## 5. Prerequisites 📋
+
+- **MS Excel** installed for initial dataset review and preprocessing. 
+- 
+
+## 
 
 
 
