@@ -46,6 +46,20 @@ Together, these dashboards enable organizations to analyze **spending patterns**
 └─ README.md
 ```
 
+## 3. Features ⭐
+
+**Transaction Report**
+
+- KPIs: Revenue, Interest Earned, Amount, Count
+- Quarterly Revenue & Transactions (combo chart)
+- Revenue by Expense Type: Bills, Entertainment, Fuel, Grocery, Food, Travel
+- Revenue by Education: Graduate, High School, Post-Graduate, Doctorate, Uneducated, Unknown
+- Revenue by Customer Job: Businessmen, White-collar, Govt, Self-employed, Blue-collar, Retirees
+- Revenue by Use Chip: Swipe, Chip, Online
+- Revenue by Card Category: Blue, Silver, Gold, Platinum
+
+**Customer Report**
+
 
 
 
