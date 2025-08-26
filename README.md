@@ -145,6 +145,58 @@ This dashboard enables stakeholders to **monitor, analyze, and improve credit ca
 - **Car Owner & House Owner segmentation**  
 - **Top 5 States** (TX, NY, CA, FL, NJ)  
 
+---
+
+## 8. DAX Measures 🧮  
+
+### Age Group Segmentation
+```DAX
+AgeGroup = SWITCH(
+    TRUE(),
+    'customer'[customer_age] < 30, "20-30",
+    'customer'[customer_age] >= 30 && 'customer'[customer_age] < 40, "30-40",
+    'customer'[customer_age] >= 40 && 'customer'[customer_age] < 50, "40-50",
+    'customer'[customer_age] >= 50 && 'customer'[customer_age] < 60, "50-60",
+    'customer'[customer_age] >= 60, "60+",
+    "Unknown"
+)
+```
+
+### Income Group Segmentation
+```DAX
+IncomeGroup = SWITCH(
+    TRUE(),
+    'customer'[income] < 35000, "Low",
+    'customer'[income] >= 35000 && 'customer'[income] < 70000, "Med",
+    'customer'[income] >= 70000, "High",
+    "Unknown"
+)
+```
+
+### Weekly KPIs
+```DAX
+week_num2 = WEEKNUM('cc_detail'[week_start_date])
+
+Revenue = 'cc_detail'[annual_fees] + 
+          'cc_detail'[total_trans_amt] + 
+          'cc_detail'[interest_earned]
+
+Current_week_Revenue = CALCULATE(
+    SUM('cc_detail'[Revenue]),
+    FILTER(
+        ALL('cc_detail'),
+        'cc_detail'[week_num2] = MAX('cc_detail'[week_num2])
+    )
+)
+
+Previous_week_Revenue = CALCULATE(
+    SUM('cc_detail'[Revenue]),
+    FILTER(
+        ALL('cc_detail'),
+        'cc_detail'[week_num2] = MAX('cc_detail'[week_num2]) - 1
+    )
+)
+```
 
 
 
