@@ -198,7 +198,40 @@ Previous_week_Revenue = CALCULATE(
 )
 ```
 
+---
+
+## 9. Insights 🔍  
+
+### Week-on-Week Change (Week 53, 31st Dec)  
+- Revenue increased by **28.8%**  
+- Total Transaction Amount & Count increased  
+- Customer count increased  
+
+### Year-to-Date Overview  
+- **Overall Revenue** → 57M  
+- **Total Interest** → 8M  
+- **Total Transaction Amount** → 46M  
+- **Male Customers** → 31M revenue  
+- **Female Customers** → 26M revenue  
+- **Blue & Silver cards** → 93% of overall transactions  
+- **Top States** → TX, NY, CA contribute 68%  
+- **Activation Rate** → 57.5%  
+- **Delinquency Rate** → 6.06%  
+
+---
+
+## 10. Future Enhancements 🔮  
+- Automate **data refresh** using Power BI Service.  
+- Add **drill-through analysis** for customers.  
+- Enhance **forecasting models** for revenue and transactions.  
+- Apply **Row-Level Security (RLS)** by state or region.  
+
+---
+
+## 11. License 📜
+*This project is licensed under the MIT License. (Include or reference the actual LICENSE file in my repository.)*
 
 
+## **Thank you for exploring the Credit Card Financial Dashboard Project! 🎉**
 
 
